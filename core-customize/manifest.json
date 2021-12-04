@@ -106,7 +106,7 @@
     "properties": [
         {
             "key": "tomcat.generaloptions.jvmsettings",
-            "value": "-Duser.country=CA -Duser.language=fr"
+            "value": "-Dfile.encoding=UTF-8 -Duser.language=fr -Duser.country=CA -Duser.region.=CA -Duser.timezone=UTC"
         },
         {
             "key": "lang.packs",
