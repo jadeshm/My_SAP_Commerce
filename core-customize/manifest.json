@@ -106,7 +106,11 @@
     "properties": [
         {
             "key": "tomcat.generaloptions.jvmsettings",
-            "value": "-Dfile.encoding=UTF-8 -Duser.language=fr -Duser.country=CA -Duser.region.=CA -Duser.timezone=UTC"
+            "value": "-Dfile.encoding=UTF-8 -Duser.language=de -Duser.country=DE -Duser.region.=DE -Duser.timezone=UTC"
+        },
+        {
+            "key": "ccv2.additional.catalina.opts",
+            "value": "-Dfile.encoding=UTF-8 -Duser.language=de -Duser.country=DE -Duser.region.=DE -Duser.timezone=UTC"
         },
         {
             "key": "lang.packs",
