@@ -81,7 +81,7 @@
  	  	  	 <exclude name="**/bin/**" />
  	  	 </patternset>
  
---><project name="tiger_buildcallbacks">
+--><!--<project name="tiger_buildcallbacks">
 
 	<!-- 
 	    Called whenever 'ant ear' is used. this callback can be used to modify the content of the ear file
@@ -96,4 +96,46 @@
 		</sequential>
 	</macrodef>
 
+</project>-->
+
+<project name="d39_buildcallbacks">
+  
+  <macrodef name="d39_after_build_all_extensions">
+    <sequential>
+      <patchLog4jJNDI/>
+    </sequential>
+  </macrodef>
+  
+  <macrodef name="patchLog4jJNDI">
+    <sequential>
+      <if>
+        <available file="${ext.core.path}/lib/log4j-core-patched.jar" />
+        <then>
+          <echo> Log4j core jar is already patched </echo>
+        </then>
+        <else>
+          <echo> PATCHING log4j core jar </echo>
+	  <unzip dest="${ext.core.path}/log4j_unzip_tmp">
+	    <fileset dir="${ext.core.path}/lib">
+	      <include name="log4j-core-*.jar"/>
+	    </fileset>
+	  </unzip>
+	  <delete failonerror="true">
+	    <fileset dir="${ext.core.path}/lib">
+	      <include name="log4j-core-*.jar"/>
+	    </fileset>
+	  </delete>
+	  
+	  <jar destfile="${ext.core.path}/lib/log4j-core-patched.jar"
+	       filesetmanifest="merge"
+	       basedir="${ext.core.path}/log4j_unzip_tmp"
+	       includes="**/*"
+	       excludes="**/JndiLookup.class"
+	       />
+	  <delete dir="${ext.core.path}/log4j_unzip_tmp" verbose="true"/>
+        </else>
+      </if>
+    </sequential>
+  </macrodef>
+  
 </project>
