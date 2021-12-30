@@ -64,7 +64,7 @@
 	"assistedservicestorefront",
 	"assistedservicewebservices",
 	"assistedservicepromotionaddon",
-        "pcmbackofficesamplesaddon",
+        "pcmbackofficesamplesaddon"
     ],
          "aspects": [
         {
