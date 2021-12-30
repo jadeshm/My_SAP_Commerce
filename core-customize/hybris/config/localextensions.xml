@@ -29,7 +29,7 @@
 	  <extension name= 'b2bacceleratorservices' />
 	  <!--<extension name= 'b2bocc' />-->
 	  <!--<extension name= 'b2bocctests' />-->
-	  <extension name= 'b2bwebservicescommons' />
+	  <!--<extension name= 'b2bwebservicescommons' />
 	  <extension name= 'commerceorgaddon' />
 	  <extension name= 'commerceorgsamplesaddon' />
 	  <extension name= 'powertoolsstore' />
@@ -288,7 +288,7 @@
 	  <extension name= 'xyformssamples' />
 	  <extension name= 'xyformsservices' />
 	  <extension name= 'xyformsstorefrontcommons' />
-	  <extension name= 'xyformsweb' />
+	  <extension name= 'xyformsweb' />-->
 
 <path autoload="true" dir="${HYBRIS_BIN_DIR}/custom"/>
 
