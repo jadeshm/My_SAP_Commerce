@@ -6,6 +6,7 @@
         "mediaconversionbackoffice",
         "yacceleratorstorefront",
         "electronicsstore"
+        "cissubscription"
     ],
     "useConfig": {
         "properties": [
