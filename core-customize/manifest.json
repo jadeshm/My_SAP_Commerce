@@ -5,8 +5,12 @@
         "cloudmediaconversion",
         "mediaconversionbackoffice",
         "yacceleratorstorefront",
-        "electronicsstore"
-        "cissubscription"
+        "electronicsstore",
+        "subscriptionservices",
+        "subscriptionfacades",
+        "subscriptioncockpits",
+        "cissubscription",
+        "subscriptionbackoffice"
     ],
     "useConfig": {
         "properties": [
