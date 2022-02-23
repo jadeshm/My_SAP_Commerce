@@ -313,14 +313,6 @@
                     "name": "hac",
                     "contextPath": "/hac"
                 },
-                {
-                    "name": "orbeonweb",
-                    "contextPath": "/web-orbeon"
-                },
-                {
-                    "name": "xyformsweb",
-                    "contextPath": "/xyformsweb"
-                }
             ]
         },
         {
