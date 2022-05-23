@@ -6,7 +6,7 @@
         "mediaconversionbackoffice",
         "yacceleratorstorefront",
         "electronicsstore",
-        "myextension"
+        
     ],
     "useConfig": {
         "properties": [
@@ -488,7 +488,8 @@
     "tests": {
         "extensions": [
             "kiwi",
-            "tiger"
+            "tiger",
+            "WYSIWYGext"
         ],
         "annotations": [
             "UnitTests",
